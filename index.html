@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Світ Dota 2 - Головна</title>
+</head>
+<body>
+
+    <header>
+        <h1>Вітаємо на фан-порталі Dota 2</h1>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="heroes.html">Герої та Ролі</a></li>
+                <li><a href="media.html">Медіа</a></li>
+                <li><a href="#find-team">Знайти команду</a></li> </ul>
+        </nav>
+    </header>
+
+    <main>
+        
+        <section id="about">
+            <h2>Що таке Dota 2?</h2>
+            
+            <p><strong>Dota 2</strong> &mdash; це складна <em>багатокористувацька</em> стратегічна гра (MOBA), де дві команди по п'ять гравців борються за знищення головної будівлі супротивника, відомої як "Ancient" (Древній).</p>
+            <p><mark>Кожен матч унікальний</mark> завдяки величезному вибору героїв та предметів.</p>
+            
+            <blockquote>
+                <p>"Dota — це гра безкінечних можливостей та навчання. Ви ніколи не перестаєте вдосконалюватися."</p>
+                <cite>— Johan "N0tail" Sundstein, 2-разовий чемпіон The International</cite>
+            </blockquote>
+        </section>
+
+        <article>
+            <h3>Новини: The International 2025</h3>
+            <p>Призовий фонд головного турніру року знову б'є рекорди! Підготовка до кваліфікацій вже почалася.</p>
+            <p>Опубліковано: <time datetime="2025-11-12">12 листопада 2025</time></p>
+            
+            <figure>
+                
+                <img src="https://images.pexels.com/photos/13590520/pexels-photo-13590520.jpeg" 
+                     alt="Скріншот битви в грі Dota 2" 
+                     title="Командна битва 5 на 5" 
+                     width="600" 
+                     height="400">
+                <figcaption>Типова командна битва біля річки.</figcaption>
+            </figure>
+        </article>
+
+        <section id="find-team"> <h2>Анкета для пошуку команди</h2>
+            
+            <form action="/submit-form" method="post">
+                <fieldset>
+                    <legend>Ваш ігровий профіль</legend>
+                    
+                    <label for="nickname">Нікнейм:</label>
+                    <input type="text" id="nickname" name="nickname" 
+                           placeholder="Ваш нік у Steam" 
+                           required 
+                           pattern="[A-Za-z0-9_]{3,16}">
+                    
+                    <label for="email">Email для зв'язку:</label>
+                    <input type="email" id="email" name="email" 
+                           placeholder="example@gmail.com" 
+                           required>
+                           
+                    <label for="mmr">Ваш MMR (рейтинг):</label>
+                    <input type="number" id="mmr" name="mmr" 
+                           required 
+                           min="1" 
+                           max="12000">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Кого ви шукаєте?</legend>
+                    
+                    <label for="role">Бажана роль:</label>
+                    <select id="role" name="role" required>
+                        <option value="">-- Оберіть роль --</option>
+                        <option value="carry">1. Carry</option>
+                        <option value="mid">2. Midlaner</option>
+                        <option value="offlane">3. Offlaner</option>
+                        <option value="support4">4. Soft Support</option>
+                        <option value="support5">5. Hard Support</option>
+                    </select>
+
+                    <label for="comments">Про себе (час гри, цілі):</label>
+                    <textarea id="comments" name="comments" rows="5" cols="50" 
+                              placeholder="Граю вечорами, шукаю команду для турнірів..."></textarea>
+                </fieldset>
+                
+                <input type="submit" value="Надіслати анкету">
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <address>
+            <p>Зв'язок з адміністрацією порталу:</p>
+            Email: <a href="mailto:admin@dota2ua.com">admin@dota2ua.com</a><br>
+            Телефон (Тех. підтримка): <a href="tel:+380990000000">+38 (099) 000-00-00</a>
+        </address>
+        
+        <p>Портал створено спільнотою фанатів.</p>
+        <p>&copy; 2025 Dota 2 UA Fan Hub. Valve та Dota 2 є торговими марками Valve Corporation.</p>
+    </footer>
+
+</body>
+</html>
